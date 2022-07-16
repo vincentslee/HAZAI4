@@ -115,3 +115,22 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm
+
+# Python bytecode
+__pycache__
+# Django dynamic directories
+logs
+media
+# Database files
+.sqlite3
+# Environment variables
+.env
+.env.*
+# Static files
+node_modules
+# Webpack
+assets/webpack-bundle.dev.json
+assets/bundles/style-dev-main.css
+assets/bundles/style-dev-main.css.map
+assets/bundles/script-dev-main.js
+assets/bundles/script-dev-main.js.map
