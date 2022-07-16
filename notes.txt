@@ -1,3 +1,4 @@
 "pipenv shell": Use venv interpreter instead of global
 "django-admin startproject": django init
 "django-admin runserver"
+"django-admin startapp <appname>": add app
