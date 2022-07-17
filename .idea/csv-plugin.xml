@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\chatbot\admin.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\discordApi\bot.py">
           <value>
             <Attribute>

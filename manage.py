@@ -10,11 +10,11 @@ load_dotenv("AUTH.env")
 
 DISCORD_GUILD = int(os.environ.get("DISCORD_GUILD"))
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
+BASE_URL = os.environ.get("BASE_URL") # TODO: Find a better configuration method for this variable
 
 
 def main():
-    base_url = "http://127.0.0.1:8000" # TODO: Make base url flexible, not hard coded
-    discord_bot = bot_construct(base_url, DISCORD_GUILD, DISCORD_TOKEN)
+    discord_bot = bot_construct(BASE_URL, DISCORD_GUILD, DISCORD_TOKEN)
     thread = threading.Thread(target=lambda: discord_bot.start())
     thread.start()
 
