@@ -6,7 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 python-dotenv = "*"
-"discord.py" = "*"
+discord-py-interactions = "*"
+requests = "*"
 
 [dev-packages]
 

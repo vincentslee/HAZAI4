@@ -1,1 +1,0 @@
-The Django application and Discord bot are two separate processes that run in parellel. The purpose of the discord bot is to interface bot commands made in Discord to API routes of the Django-Discord app. Basically, the main purpose of the Discord bot will be making API calls to the application, minimal processing should be done through the bot. 

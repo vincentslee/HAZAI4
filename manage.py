@@ -2,8 +2,22 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import threading
+from discordApi.bot import bot_construct
+from dotenv import load_dotenv
+
+load_dotenv("AUTH.env")
+
+DISCORD_GUILD = int(os.environ.get("DISCORD_GUILD"))
+DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
+
 
 def main():
+    base_url = "http://127.0.0.1:8000" # TODO: Make base url flexible, not hard coded
+    discord_bot = bot_construct(base_url, DISCORD_GUILD, DISCORD_TOKEN)
+    thread = threading.Thread(target=lambda: discord_bot.start())
+    thread.start()
+
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'conf.settings')
     try:
