@@ -14,9 +14,9 @@ BASE_URL = os.environ.get("BASE_URL") # TODO: Find a better configuration method
 
 
 def main():
-    discord_bot = bot_construct(BASE_URL, DISCORD_GUILD, DISCORD_TOKEN)
-    thread = threading.Thread(target=lambda: discord_bot.start())
-    thread.start()
+    # discord_bot = bot_construct(BASE_URL, DISCORD_GUILD, DISCORD_TOKEN)
+    # thread = threading.Thread(target=lambda: discord_bot.start())
+    # thread.start()
 
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'conf.settings')

@@ -134,5 +134,7 @@ assets/bundles/style-dev-main.css
 assets/bundles/style-dev-main.css.map
 assets/bundles/script-dev-main.js
 assets/bundles/script-dev-main.js.map
-data/*
+discordApi/data/chatlogs/*
+discordApi/data/metadata/*
+
 AUTH.env

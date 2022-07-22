@@ -9,6 +9,7 @@ python-dotenv = "*"
 discord-py-interactions = "*"
 requests = "*"
 tensorflow = "*"
+"discord.py" = "*"
 
 [dev-packages]
 
